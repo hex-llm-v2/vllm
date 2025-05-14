@@ -13,7 +13,7 @@ from vllm.sampling_params import SamplingParams, SamplingType
 from vllm.utils import swap_dict_values
 from vllm.v1.outputs import LogprobsTensors
 from vllm.v1.sample.metadata import SamplingMetadata
-from vllm.v1.worker.block_table import BlockTable
+from vllm.v1.worker.block_table_jax import BlockTableJax as BlockTable
 
 _SAMPLING_EPS = 1e-5
 

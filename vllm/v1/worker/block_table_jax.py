@@ -46,6 +46,8 @@ class BlockTableJax:
         self.slot_mapping: jax.Array = jax.device_put(_slot_mapping_init, self.device) \
             if self.device else _slot_mapping_init
 
+        self.dtype = jnp.bfloat16
+
     def append_row(
         self,
         block_ids: List[int],
